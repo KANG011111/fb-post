@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook 貼文文字轉換器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📱 Facebook 貼文文字轉換器</h1>
+            <p>自動插入零寬度空格，避免 Facebook 演算法偵測</p>
+        </header>
+
+        <div class="emoji-toolbar">
+            <h3>📧 常用 Emoji 快捷</h3>
+            <div class="emoji-buttons">
+                <button class="emoji-btn" data-emoji="👇">👇</button>
+                <button class="emoji-btn" data-emoji="⬜">⬜</button>
+                <button class="emoji-btn" data-emoji="▶︎">▶︎</button>
+                <button class="emoji-btn" data-emoji="◼︎">◼︎</button>
+                <button class="emoji-btn" data-emoji="⬇︎">⬇︎</button>
+                <button class="emoji-btn" data-emoji="◀︎">◀︎</button>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="input-section">
+                <div class="section-header">
+                    <h3>📝 輸入原始文字</h3>
+                    <div class="char-count">字數: <span id="input-count">0</span></div>
+                </div>
+                <textarea 
+                    id="input-text" 
+                    placeholder="在這裡輸入你的 Facebook 貼文內容..."
+                    rows="15"
+                ></textarea>
+            </div>
+
+            <div class="output-section">
+                <div class="section-header">
+                    <h3>✨ 轉換預覽</h3>
+                    <div class="actions">
+                        <div class="char-count">字數: <span id="output-count">0</span></div>
+                        <button id="copy-btn" class="copy-btn" disabled>
+                            📋 複製文字
+                        </button>
+                    </div>
+                </div>
+                <div id="output-text" class="output-preview">
+                    轉換後的文字將在這裡顯示...
+                </div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3>ℹ️ 使用說明</h3>
+            <ul>
+                <li>在左側輸入框中輸入你的 Facebook 貼文內容</li>
+                <li>系統會自動在文字間插入零寬度空格 (Zero Width Space)</li>
+                <li>右側會即時顯示轉換後的預覽</li>
+                <li>點擊「複製文字」按鈕將轉換後的文字複製到剪貼板</li>
+                <li>使用上方的 Emoji 快捷按鈕快速插入常用符號</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
