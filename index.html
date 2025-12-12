@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook 貼文文字轉換器</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -17,11 +19,14 @@
             <h3>📧 常用 Emoji 快捷</h3>
             <div class="emoji-buttons">
                 <button class="emoji-btn" data-emoji="👇">👇</button>
-                <button class="emoji-btn" data-emoji="⬜">⬜</button>
                 <button class="emoji-btn" data-emoji="▶︎">▶︎</button>
                 <button class="emoji-btn" data-emoji="◼︎">◼︎</button>
                 <button class="emoji-btn" data-emoji="⬇︎">⬇︎</button>
                 <button class="emoji-btn" data-emoji="◀︎">◀︎</button>
+                <button class="emoji-btn" data-emoji="➡︎">➡︎</button>
+                <button class="emoji-btn" data-emoji="⏹︎">⏹︎</button>
+                <button class="emoji-btn" data-emoji="▪︎">▪︎</button>
+                <button class="emoji-btn" data-emoji="♠︎">♠︎</button>
             </div>
         </div>
 
@@ -31,11 +36,7 @@
                     <h3>📝 輸入原始文字</h3>
                     <div class="char-count">字數: <span id="input-count">0</span></div>
                 </div>
-                <textarea 
-                    id="input-text" 
-                    placeholder="在這裡輸入你的 Facebook 貼文內容..."
-                    rows="15"
-                ></textarea>
+                <textarea id="input-text" placeholder="在這裡輸入你的 Facebook 貼文內容..." rows="15"></textarea>
             </div>
 
             <div class="output-section">
@@ -68,4 +69,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

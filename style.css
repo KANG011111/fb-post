@@ -191,9 +191,17 @@ header p {
 }
 
 @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .info-section {
@@ -234,20 +242,20 @@ header p {
     .main-content {
         grid-template-columns: 1fr;
     }
-    
+
     header h1 {
         font-size: 2rem;
     }
-    
+
     .emoji-buttons {
         justify-content: center;
     }
-    
+
     .section-header {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .actions {
         align-self: stretch;
         justify-content: space-between;
@@ -258,7 +266,7 @@ header p {
     body {
         padding: 10px;
     }
-    
+
     header,
     .emoji-toolbar,
     .input-section,
@@ -266,11 +274,11 @@ header p {
     .info-section {
         padding: 15px;
     }
-    
+
     header h1 {
         font-size: 1.8rem;
     }
-    
+
     .emoji-btn {
         padding: 10px 14px;
         font-size: 1rem;
@@ -282,6 +290,13 @@ header p {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
